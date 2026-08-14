@@ -1,0 +1,80 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Things I've Done — Camron Rushin</title>
+  <meta
+    name="description"
+    content="A few projects, collaborations, and unusual things Camron Rushin has been part of."
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="page">
+
+    <header class="things-header">
+      <a class="back-link" href="index.html">← Home</a>
+
+      <h1 class="things-title">
+        Things I’ve Done
+      </h1>
+
+      <p class="things-intro">
+        A few projects, collaborations, and other things I’ve gotten to be part of over the years.
+      </p>
+    </header>
+
+    <section class="things-grid">
+
+      <article class="thing">
+        <p class="thing-type">Music</p>
+        <h2>Safeword</h2>
+        <p>
+          My previous band before The Best Around. More about this one soon.
+        </p>
+      </article>
+
+      <article class="thing">
+        <p class="thing-type">Photography / Art</p>
+        <h2>William Hundley</h2>
+        <p>
+          Photography work and creative collaborations with Austin artist William Hundley.
+        </p>
+      </article>
+
+      <article class="thing">
+        <p class="thing-type">Film</p>
+        <h2>Computer Chess</h2>
+        <p>
+          I had a role in Andrew Bujalski’s film <em>Computer Chess</em>.
+        </p>
+      </article>
+
+      <article class="thing">
+        <p class="thing-type">Television</p>
+        <h2>Family Feud</h2>
+        <p>
+          I was once a contestant on <em>Family Feud</em>. There is definitely more to this story.
+        </p>
+      </article>
+
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Camron Rushin</p>
+    </footer>
+
+  </main>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
+```
