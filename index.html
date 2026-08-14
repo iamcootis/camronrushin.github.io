@@ -3,21 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Camron Rushin</title>
+  <meta
+    name="description"
+    content="Camron Rushin. I make software and music."
+  >
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+  <main class="page">
+    <section class="hero">
 
-  <main>
-    <h1>Camron Rushin</h1>
+      <h1 class="name">
+        <span>Camron</span>
+        <span>Rushin</span>
+      </h1>
 
-    <p>I make software and music.</p>
+      <div class="intro">
+        <p class="tagline">I make software and music.</p>
+        <p class="location">Austin, Texas</p>
+      </div>
 
-    <nav>
-      <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-      <a href="#" target="_blank">The Best Around</a>
-      <a href="things.html">Things I’ve Done</a>
-    </nav>
+      <nav class="links" aria-label="Primary navigation">
+
+        <a
+          class="link-card"
+          href="https://www.linkedin.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>LinkedIn</span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a
+          class="link-card"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>The Best Around</span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a class="link-card" href="things.html">
+          <span>Things I’ve Done</span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a class="link-card" href="mailto:YOUR_EMAIL_HERE">
+          <span>Contact</span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+
+      </nav>
+
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Camron Rushin</p>
+    </footer>
   </main>
 
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
 </body>
 </html>
