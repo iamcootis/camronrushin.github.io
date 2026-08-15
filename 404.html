@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,23 +13,76 @@
 
 <body>
   <main class="page">
-    <section class="error-page">
 
-      <p class="error-code">404</p>
+    <header class="error-header">
+      <a class="error-brand" href="/">Camron Rushin</a>
 
-      <h1 class="error-title">
-        Nothing here.
-      </h1>
+      <nav class="error-nav" aria-label="Site navigation">
+        <a
+          href="https://www.linkedin.com/in/camronrushin/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
 
-      <p class="error-copy">
-        This page either moved, disappeared, or never existed in the first place.
-      </p>
+        <a
+          href="https://www.the-best-around.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          The Best Around
+        </a>
 
-      <a class="error-link" href="/">
-        Back home →
-      </a>
+        <a href="/things.html">
+          Things I’ve Done
+        </a>
+
+        <a href="mailto:camron.rushin@gmail.com">
+          Contact
+        </a>
+      </nav>
+    </header>
+
+    <section class="error-layout">
+
+      <div class="error-content">
+        <p class="error-code">404</p>
+
+        <h1 class="error-heading">
+          What are you doing here?<br>
+          Are you lost?
+        </h1>
+
+        <p class="error-message">
+          The page you’re looking for must’ve wandered off.
+        </p>
+
+        <a class="error-home" href="/">
+          <span>Back home</span>
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+
+      <div class="error-dog">
+        <img
+          src="lucy-404.png"
+          alt="Camron's dog lying down with her paws crossed"
+        >
+      </div>
 
     </section>
+
+    <footer class="error-footer">
+      <p>© <span id="year"></span> Camron Rushin</p>
+    </footer>
+
   </main>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
 </body>
 </html>
+```
