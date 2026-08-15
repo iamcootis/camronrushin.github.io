@@ -236,3 +236,64 @@ a {
 .thing-links a:focus-visible {
   opacity: 0.55;
 }
+
+/* 404 */
+
+.error-page {
+  min-height: 80vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.error-code {
+  margin: 0 0 24px;
+
+  font-size: clamp(6rem, 18vw, 16rem);
+  font-weight: 800;
+  line-height: 0.8;
+  letter-spacing: -0.07em;
+}
+
+.error-title {
+  margin: 0;
+
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.error-copy {
+  max-width: 600px;
+  margin: 28px 0 0;
+
+  color: var(--muted);
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.error-link {
+  display: inline-block;
+  width: fit-content;
+  margin-top: 42px;
+  padding: 18px 22px;
+
+  border: 1.5px solid var(--border);
+
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+
+  transition:
+    background-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+.error-link:hover,
+.error-link:focus-visible {
+  background: var(--text);
+  color: var(--background);
+  transform: translateY(-3px);
+}
